@@ -1,0 +1,96 @@
+.drawer {
+  position: fixed;
+  /*常に最上部に表示したいので固定*/
+  top: 0;
+  right: 0;
+  width: 70px;
+  height: 72px;
+  cursor: pointer;
+  z-index: 50;
+}
+
+.drawer .line {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 32px;
+  height: 2px;
+  background: #333333;
+  text-align: center;
+}
+
+.drawer .line1 {
+  top: 16px;
+  transition: 0.4s ease;
+}
+
+.drawer .line2 {
+  top: 26px;
+  transition: 0.4s ease;
+}
+
+.drawer .line3 {
+  top: 36px;
+  transition: 0.4s ease;
+}
+
+
+.btn-line1 {
+  transform: translateY(10px) rotate(-45deg);
+  transition: 0.4s ease;
+}
+
+.btn-line2 {
+  transition: 0.4s ease;
+  opacity: 0;
+}
+
+.btn-line3 {
+  transform: translateY(-10px) rotate(45deg);
+  transition: 0.4s ease;
+}
+
+/*サイドバー*/
+.menu-enter-active,
+.menu-leave-active {
+  transition: opacity 0.4s;
+}
+
+.menu-enter,
+.menu-leave-to {
+  opacity: 0;
+}
+
+.menu-leave,
+.menu-enter-to {
+  opacity: 1;
+}
+
+.menu li {
+  list-style: none;
+  line-height: 1;
+  padding: 1rem;
+}
+
+.menu {
+  background-color: rgba(197, 197, 197, 0.671);
+  z-index: 30;
+  padding: 2rem 1rem;
+  position: fixed;
+  width: 20rem;
+  height: 80rem;
+  top: 0;
+  right: 0;
+}
+
+.menu a {
+  color: rgb(66, 66, 66);
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0 2rem;
+}
+
+.menu ul {
+  margin: 1rem;
+  padding: 0;
+}
